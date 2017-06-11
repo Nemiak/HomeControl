@@ -1,0 +1,43 @@
+{
+	"devices": {
+		"Switch1": {
+			"uuid": "0000-74-da-38-6f264f",
+			"protocol": [ "elro_800_switch" ],
+			"id": [{
+				"systemcode": 31,
+				"unitcode": 1
+			}],
+			"state": "off"
+		}
+	},
+	"rules": {},
+	"gui": {
+		"Switch1": {
+			"name": "Erleuchtung",
+			"group": [ "Gruppe1" ]
+		}
+	},
+	"settings": {
+		"log-level": 6,
+		"pid-file": "/var/run/pilight.pid",
+		"log-file": "/var/log/pilight.log",
+		"gpio-platform": "raspberrypi3",
+		"webserver-enable": 1,
+		"webserver-root": "/usr/local/share/pilight/",
+		"webserver-http-port": 5001,
+		"webserver-cache": 1
+	},
+	"hardware": {
+		"433gpio": {
+			"sender": 0,
+			"receiver": 1
+		}
+	},
+	"registry": {
+		"pilight": {
+			"version": {
+				"current": "7.0"
+			}
+		}
+	}
+}
